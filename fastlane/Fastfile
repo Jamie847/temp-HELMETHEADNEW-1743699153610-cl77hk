@@ -1,0 +1,52 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    increment_build_number(xcodeproj: "App_Resources/iOS/HelmetHead.xcodeproj")
+    build_ios_app(
+      scheme: "HelmetHead",
+      export_method: "app-store"
+    )
+    upload_to_testflight
+  end
+
+  desc "Push a new release build to the App Store"
+  lane :release do
+    increment_build_number(xcodeproj: "App_Resources/iOS/HelmetHead.xcodeproj")
+    build_ios_app(
+      scheme: "HelmetHead",
+      export_method: "app-store"
+    )
+    upload_to_app_store(
+      force: true,
+      skip_screenshots: true,
+      skip_metadata: true
+    )
+  end
+end
+
+platform :android do
+  desc "Push a new beta build to Play Store"
+  lane :beta do
+    gradle(
+      task: "clean assembleRelease",
+      project_dir: "android/"
+    )
+    upload_to_play_store(
+      track: 'beta',
+      aab: "#{lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]}"
+    )
+  end
+
+  desc "Push a new release build to Play Store"
+  lane :release do
+    gradle(
+      task: "clean assembleRelease",
+      project_dir: "android/"
+    )
+    upload_to_play_store(
+      aab: "#{lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]}"
+    )
+  end
+end
