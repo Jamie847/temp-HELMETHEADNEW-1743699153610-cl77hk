@@ -1,0 +1,60 @@
+{
+  "name": "helmet-head-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "vite",
+    "build": "vite build", 
+    "preview": "vite preview",
+    "mobile:clean": "ns clean",
+    "mobile:build:android": "ns build android --release --key-store-path ./keystore/helmethead.keystore --key-store-password $KEYSTORE_PASSWORD --key-store-alias helmethead --key-store-alias-password $ALIAS_PASSWORD",
+    "mobile:build:ios": "ns build ios --release --for-device",
+    "mobile:run:android": "ns run android",
+    "mobile:run:ios": "ns run ios"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.3.9",
+    "@supabase/supabase-js": "^2.39.3",
+    "react-router-dom": "^6.22.0",
+    "@nativescript/core": "^8.6.1",
+    "@nativescript/theme": "^3.0.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.16",
+    "bs58": "^5.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cohere-ai": "^7.6.2",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "express": "^4.18.2",
+    "fastestsmallesttextencoderdecoder": "^1.0.22",
+    "natural": "^6.10.4", 
+    "node-fetch": "^3.3.2",
+    "openai": "^4.24.1",
+    "postcss": "^8.4.32",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-twitter-embed": "^4.0.4",
+    "rss-parser": "^3.13.0",
+    "tailwindcss": "^3.4.0",
+    "twilio": "^4.20.0",
+    "twitter-api-v2": "^1.15.2",
+    "typescript": "^5.3.3",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@nativescript/android": "^8.6.1",
+    "@nativescript/ios": "^8.6.1",
+    "@nativescript/types": "^8.6.1",
+    "@nativescript/webpack": "^5.0.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
