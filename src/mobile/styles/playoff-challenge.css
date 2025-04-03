@@ -1,0 +1,102 @@
+.playoff-challenge {
+  background-color: #f8f9fa;
+}
+
+.challenge-header {
+  background-color: #1a1a1a;
+  padding: 20;
+  text-align: center;
+}
+
+.header-logo {
+  height: 80;
+  margin-bottom: 16;
+}
+
+.challenge-title {
+  color: #ffffff;
+  font-size: 28;
+  font-weight: bold;
+  margin-bottom: 8;
+}
+
+.challenge-subtitle {
+  color: #e0e0e0;
+  font-size: 18;
+}
+
+.bonus-info {
+  background-color: #fff3cd;
+  color: #856404;
+  font-size: 16;
+  padding: 12;
+  margin: 16;
+  border-radius: 8;
+  text-align: center;
+}
+
+.selected-teams {
+  height: 300;
+  margin: 16;
+  border-radius: 8;
+  background-color: white;
+}
+
+.team-item {
+  padding: 12;
+  border-bottom-width: 1;
+  border-bottom-color: #e0e0e0;
+}
+
+.team-name {
+  font-size: 16;
+  color: #333;
+}
+
+.remove-button {
+  width: 40;
+  height: 40;
+  background-color: transparent;
+  color: #dc3545;
+}
+
+.champion-section {
+  margin: 16;
+  padding: 16;
+  background-color: white;
+  border-radius: 8;
+}
+
+.section-title {
+  font-size: 18;
+  font-weight: bold;
+  margin-bottom: 12;
+  text-align: center;
+}
+
+.primary-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16;
+  padding: 12;
+  margin: 16;
+  border-radius: 8;
+}
+
+.secondary-button {
+  background-color: #6c757d;
+  color: white;
+  font-size: 16;
+  padding: 12;
+  margin: 8 16;
+  border-radius: 8;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  font-size: 18;
+  padding: 16;
+  margin: 16;
+  border-radius: 8;
+}
