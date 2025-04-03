@@ -1,0 +1,37 @@
+.header {
+  background-color: #1a1a1a;
+  padding: 16;
+  text-align: center;
+}
+
+.header-logo {
+  height: 60;
+  margin-bottom: 8;
+}
+
+.jan-logo {
+  height: 40;
+  margin: 8 0;
+}
+
+.rewards-section {
+  background-color: #f8f9fa;
+  border-radius: 8;
+  margin: 16;
+  padding: 16;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 24;
+  font-weight: bold;
+  margin: 16;
+  text-align: center;
+}
+
+.info {
+  font-size: 16;
+  color: #666;
+  text-align: center;
+  margin: 8 16;
+}
